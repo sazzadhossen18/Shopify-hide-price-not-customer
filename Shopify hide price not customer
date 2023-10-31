@@ -1,0 +1,7 @@
+      {% if customer %}
+        <div class="product__price">
+            {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+        </div>
+        {% else %}
+        <b>Our Price:</b> (Dealers Only)
+        {% endif %}
